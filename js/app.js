@@ -53,6 +53,8 @@ function inView (ele){
 */
 
 // build the nav
+// creating li element for each section and making thier(li) text content the section's id 
+// also adding event listeners so they scroll to thier assigned section
 
 for (let i = 0; i < section.length; i++) {
     const element = section.item(i);
@@ -71,20 +73,4 @@ for (let i = 0; i < section.length; i++) {
 // Add class 'active' to section when near top of viewport
 
 window.addEventListener('scroll',e => setTimeout(() => {section.forEach(ele => inView(ele))},500 ));
-
-// Scroll to anchor ID using scrollTO event
-
-
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-
-// Build menu 
-
-// Scroll to section on link click
-
-// Set sections as active
-
 
