@@ -144,7 +144,7 @@ section {
         top: 0;
         width: 100%;
         z-index: 5;
-        opacity:10%;
+        opacity:30%;
         transition:ease 400ms;
     }
     .page__header:hover{
@@ -158,7 +158,7 @@ section {
     .navbar__menu ul {
         display:flex;
         flex-direction: row;
-        gap:5px;
+        gap:2px;
         padding-left: 0;
         margin: 0;
         text-align: right;
@@ -180,7 +180,7 @@ section {
     .navbar__menu li {
         color:rgb(255, 255, 255);
         margin:0px;
-        padding:0.8em;
+        padding:0.5em;
         list-style:none;
         cursor:pointer;
         border:rgb(255, 255, 255) solid 1px;
@@ -259,18 +259,17 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: rgb(206, 160, 160 , 0.3);
 }
 
 section.your-active-class .landing__container::before {
     opacity: 1;
-    animation: rotate 4s linear 0s infinite forwards;
+    animation: rotate 4s linear 1s infinite forwards;
 }
 
 section.your-active-class .landing__container::after {
     opacity: 1;
-    animation: rotate 5s linear 0s infinite forwards reverse;
+    animation: rotate 5s linear 1s infinite forwards reverse;
 }
 
 /* Section Active Styles Keyframe Animations */
